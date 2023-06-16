@@ -107,7 +107,12 @@ export default function Main(){
                             </Pressable>
                         </View>
                         
+                        
                     </View>
+                    <Pressable style={stile.home.search.main}>
+                        <Image source={require('../assets/search.png')} />
+                        <Text style={{fontSize: 20, marginLeft: 10, letterSpacing: 3}}>Search ...</Text>
+                    </Pressable>
                 </SafeAreaView>
             }
         </View>
@@ -143,6 +148,17 @@ const styles = StyleSheet.create({
                     fontSize: 20,
                     letterSpacing: 2,
                     marginTop: 10
+                }
+            },
+
+            search: {
+                main:{
+                    backgroundColor: 'rgb(224,224,224)', 
+                    borderRadius: 10, 
+                    flexDirection: 'row',
+                    marginTop: 10,
+                    padding: 10,
+                    alignItems: 'center'
                 }
             }
         }
