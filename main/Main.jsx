@@ -98,6 +98,7 @@ export default function Main(){
                         <View style={stile.home.header.title}>
                             <Text style={stile.home.header.titleText}>Hello,</Text>
                             <Text style={stile.home.header.titleText}>{window.user === undefined ? "User" : window.user}.</Text>
+                            <Text style={stile.home.header.subtitleText}>What do you want to eat?</Text>
                         </View>
 
                         <View style={stile.home.header.profile}>
@@ -134,7 +135,14 @@ const styles = StyleSheet.create({
                 titleText: {
                     fontSize: 50,
                     fontWeight: 600,
-                    color: '#2F2E41'
+                    color: '#2F2E41',
+                    letterSpacing: 5
+                },
+
+                subtitleText: {
+                    fontSize: 20,
+                    letterSpacing: 2,
+                    marginTop: 10
                 }
             }
         }
